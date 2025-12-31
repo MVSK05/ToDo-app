@@ -42,44 +42,43 @@ A full-stack **Todo Application** built using the **PERN stack (PostgreSQL, Expr
 npm install
 
 ## DotEnv
-PORT=5001
-DATABASE_URL=postgresql://username:password@localhost:5432/todoapp
-JWT_SECRET=your_jwt_secret
+- PORT=5001
+- DATABASE_URL=postgresql://username:password@localhost:5432/todoapp
+- JWT_SECRET=your_jwt_secret
 
-##Start backend server
+## Start backend server
 npm run dev
 
-##Backend runs on:
+## Backend runs on:
 http://localhost:5001
 
 ## Frontend Setup
-###Install dependencies
+### Install dependencies
 npm install
 
-###Start frontend
+### Start frontend
 npm run dev
 
-##Frontend runs on:
+## Frontend runs on:
 http://localhost:5173
 
-##API Endpoints
-###Authentication
-Method	 Endpoint	                Description
-POST	 /api/auth/register	   Register user
-POST	 /api/auth/login	      Login user
-##Todos (Protected)
-Method	Endpoint	   Description
-GET	      /api/todos	Get user todos
-POST	/api/todos	   Create new todo
-##Protected Routes Header
+## API Endpoints
+### Authentication
+- Method	 Endpoint	             Description
+- POST	   /api/auth/register	   Register user
+- POST	   /api/auth/login	     Login user
+## Todos (Protected)
+- Method	Endpoint	   Description
+- GET	    /api/todos	 Get user todos
+- POST	  /api/todos	 Create new todo
+## Protected Routes Header
 token: <JWT_TOKEN>
 
-##🔄 Authentication Flow
-1.User registers
-2.User logs in
-3.Backend returns JWT token
-4.Token is stored in localStorage
-5.Username is decoded from JWT
-6.Todo page displays:  Welcome {username}
-7.Logout clears authentication data
-```
+## 🔄 Authentication Flow
+- 1.User registers
+- 2.User logs in
+- 3.Backend returns JWT token
+- 4.Token is stored in localStorage
+- 5.Username is decoded from JWT
+- 6.Todo page displays:  Welcome {username}
+- 7.Logout clears authentication data
