@@ -39,8 +39,6 @@ A full-stack **Todo Application** built using the **PERN stack (PostgreSQL, Expr
 ## Backend Setup
 
 ### Install dependencies
-
-```bash
 npm install
 
 ## DotEnv
